@@ -26,6 +26,7 @@ namespace CoolRatings.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            //TODO:
             List<ShowModel> ls = new List<ShowModel>();
             ls = _showInterface.GetAllShows();
             List<ShowViewModel> svm = new List<ShowViewModel>();
@@ -46,6 +47,5 @@ namespace CoolRatings.Controllers
             return Ok(svm);
         }
     
-
     }
 }
